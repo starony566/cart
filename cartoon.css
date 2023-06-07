@@ -32,6 +32,7 @@ nav ul a{
     color: black;
     text-transform: capitalize;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-shadow: 2px 2px 15px rgb(0, 139, 132 );
 }
 a:hover{
     color: blue;
@@ -125,5 +126,5 @@ span{
 }
 .bottom-img img:hover{
     rotate: 360deg;
-    transition: width 2s, height 4s, rotate 6s;
+    transition: rotate 6s;
 }
