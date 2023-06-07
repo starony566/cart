@@ -18,6 +18,7 @@ nav{
     justify-content: space-around;
     padding: 0.7rem 0.7rem;
     background-color: azure;
+    
 }
 
 nav ul{
@@ -69,7 +70,11 @@ span{
     right: 2rem;
     border-radius: 60% ;
     width: 30%;
-    
+    transition: blue, red 6s;
+}
+.profile-photo:hover{
+    rotate: 360deg;
+    transition: rotate 7s;
 }
 
 .details button{
@@ -82,6 +87,11 @@ span{
     border: 0 ; 
     margin-top: 0.5rem; 
 } 
+.details:hover{
+    transform: skew(20px,30px);
+    transition: skew 6s;
+
+}
 
 .details button i{
     background-color: beige;
@@ -97,7 +107,7 @@ span{
     border-radius: 50%; 
     color:rgb(0, 139, 132);
     padding: 0.5rem;
-    margin-top: 0.5rem;
+    margin-top: 0.5remp;
 }
 
 .bottom-img{
@@ -111,4 +121,9 @@ span{
     border-radius: 100px 100px;
     margin-bottom: 0.5%;
     margin-left: -50%;
+
+}
+.bottom-img img:hover{
+    rotate: 360deg;
+    transition: width 2s, height 4s, rotate 6s;
 }
