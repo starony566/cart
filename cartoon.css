@@ -13,6 +13,14 @@ body{
     font-family: 'inter', sans-serif;
 }
 
+    @keyframes example {
+        0%   {center:10px; top:0px;}
+        25%  {right:200px; top:20px;}
+        50%  {right:200px; top:200px;}
+        75%  {right:10px; top:200px;}
+        100% {center:0px; top:100px;}
+}
+
 nav{
     display: flex;
     justify-content: space-around;
@@ -65,13 +73,20 @@ span{
     color: orange;
 }
 
-.profile-photo{
+.photo{
+    width: 30vw;
+    height: 30vh;
+}
+
+.photo .profile-photo{
     position: absolute;
     top: 8rem;
     right: 2rem;
-    border-radius: 60% ;
-    width: 30%;
-    transition: blue, red 6s;
+    border-radius: 50%;
+    object-fit: cover;
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
 .profile-photo:hover{
     rotate: 360deg;
@@ -88,11 +103,8 @@ span{
     border: 0 ; 
     margin-top: 0.5rem; 
 } 
-.details:hover{
-    transform: skew(20px,30px);
-    transition: skew 6s;
 
-}
+
 
 .details button i{
     background-color: beige;
@@ -108,7 +120,7 @@ span{
     border-radius: 50%; 
     color:rgb(0, 139, 132);
     padding: 0.5rem;
-    margin-top: 0.5remp;
+    margin-top: 0.5rem;
 }
 
 .bottom-img{
@@ -122,9 +134,26 @@ span{
     border-radius: 100px 100px;
     margin-bottom: 0.5%;
     margin-left: -50%;
+    -webkit-box-reflect: below;
 
 }
 .bottom-img img:hover{
     rotate: 360deg;
     transition: rotate 6s;
 }
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    padding-top: 0.5rem;
+  }
+.tooltip .tooltiptext{
+    visibility: hidden;
+    background-color: aquamarine;
+    color: black;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
