@@ -5,12 +5,12 @@
     margin: 0;
 }
 
-/* @media screen and (max-width: 678px){ */
-    /* body{ */
-            /* background-color: aquamarine; */
-            /* font-size: medium; */
-    /* } */
-/* } */
+@media screen and (max-width: 678px){
+    body{
+            background-color: aquamarine;
+            font-size: medium;
+    }
+}
 body{
     width: 100%;
     background-image: url(https://pimages.toolbox.com/wp-content/uploads/2021/12/08134343/3D-illustration-of-a-computer-network.jpg);
@@ -33,8 +33,6 @@ nav{
     padding: 0.7rem 0;
     background-color: azure;
     background-size: cover;
-    
-    
 }
 
 nav ul{
@@ -57,7 +55,7 @@ a:hover{
 }
 
 section{
-    margin-inline: 8rem;
+    margin-inline: 5rem;
     padding-block: 5rem;
     height: 93vh;
     position: relative;
@@ -82,23 +80,25 @@ span{
 }
 
 .photo{
-    width: 30vw;
-    height: 30vh;
+    width: 20vw;
+    height: 20vh;
 }
 
 .photo .profile-photo{
     position: absolute;
     top: 8rem;
-    right: 2rem;
+    right: 0;
+    width: 20vw;
     border-radius: 50%;
     object-fit: cover;
-    animation-name: example;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
+    /* animation-name: example; */
+    animation-duration: 1s;
+    /* animation-iteration-count: infinite; */
 }
+
 .profile-photo:hover{
     rotate: 360deg;
-    transition: rotate 7s;
+    transition: rotate 5s;
 }
 
 .details button{
@@ -111,8 +111,6 @@ span{
     border: 0 ; 
     margin-top: 0.5rem; 
 } 
-
-
 
 .details button i{
     background-color: beige;
@@ -134,7 +132,7 @@ span{
 .bottom-img{
     position: absolute;
     bottom: 1rem;
-    left: 1rem;
+    left: 2rem;
 }
 
 .bottom-img img{
